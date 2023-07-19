@@ -1,0 +1,67 @@
+.app {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+}
+
+form {
+    margin: 0 auto;
+    width: 40%;
+}
+
+input[type=file], textarea, button {
+    display: block;
+    margin: 1em 0;
+    width: 100%;
+}
+
+#imageContainer img {
+    width: 200px;
+    height: auto;
+    padding: 1em;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#imageContainer, #textContainer {
+    width: 45%;
+}
+
+#k {
+    position: sticky;
+    margin: -8px 0 0 0 ;
+    height: 30px;
+    width: 40px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkblue;
+    text-align: center;
+    font-size: large;
+}
+
+#cluster {
+    position: sticky;
+    margin: 0 0 0 0 ;
+    width: auto;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    cursor: pointer;
+    font-size: xx-large;
+}

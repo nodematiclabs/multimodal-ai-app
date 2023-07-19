@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image and Text Submission</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <input id="k" type="number" min="0" value="2">
+    <button id="cluster"><i class="fas fa-brain"></i></button>
+    <div id="app">
+        <div id="container">
+            <form id="imageForm" action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+            <form id="descriptionForm" action="/upload" method="POST" enctype="multipart/form-data">
+                <textarea name="description" placeholder="Enter description here"></textarea>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        <div id="container">
+            <div id="imageContainer"></div>
+            <div id="textContainer"></div>
+        </div>
+    </div>
+    <script src="static/scripts.js"></script>
+</body>
+</html>
